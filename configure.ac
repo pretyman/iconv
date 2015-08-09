@@ -29,7 +29,7 @@ dnl           checks for basic programs
 AC_PROG_CC
 AC_PROG_CPP
 AC_PROG_INSTALL
-
+m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 AC_PATH_PROG([STRIP], [strip], [:]) dnl sets STRIP
 AM_PROG_INSTALL_STRIP               dnl overrides STRIP when cross-compiling,
                                     dnl sets INSTALL_STRIP_PROGRAM
